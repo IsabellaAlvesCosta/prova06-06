@@ -1,0 +1,19 @@
+(1) /get     /anime
+    response (200)
+    [
+        {
+            "id": ,
+            "nome":
+        }
+    ]
+
+(2) /post    /anime/cadastar
+    request boby
+    {
+        "id": ,
+        "nome": ,
+    }
+    response(200) {
+        "id": ,
+        "email" ,
+    }
