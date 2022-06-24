@@ -15,7 +15,7 @@ export async function inserirAnime(anime) {
     
     }
 
-    export async function consultarAnime(anime) {
+    export async function listarAnimes(anime) {
 
         const comando = 
         

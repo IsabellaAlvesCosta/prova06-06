@@ -16,6 +16,7 @@ server.post('/anime', async (req,resp) => {
             erro:err.message
         })
     }
+    resp.send=inserirAnime;
 });
 
 server.get('/anime', async (req, resp) => {
@@ -37,3 +38,4 @@ server.get('/anime', async (req, resp) => {
 });
 
 export default server
+
