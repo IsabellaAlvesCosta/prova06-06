@@ -1,16 +1,17 @@
+import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import Cadastrar from '/pages/cadastrarAnime';
+import Cadastrar from './pages/cadastrarAnime/index';
 import Consultar from './pages/consultarAnimes';
 
 
 
-export default function Index() {
+export default function Paths() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path='/' element={<Cadastrar />} />
-                <Route path='/consultarAnimes' element={<Consultar/>} />
+                <Route exact path='/' element={<Cadastrar />} />
+                <Route exact path='/consultarAnimes' element={<Consultar/>} />
             </Routes>
         </BrowserRouter>
     )

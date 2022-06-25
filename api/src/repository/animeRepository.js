@@ -1,4 +1,6 @@
+import server from '../controller/animeController.js';
 import { con } from './connection.js'
+
 
 
 export async function inserirAnime(anime) {
@@ -11,11 +13,11 @@ export async function inserirAnime(anime) {
     const [resposta] = await con.query (comando,[anime.nome]);
     anime.id = resposta.insertId;
     
-    return anime;
+    return resposta;
     
     }
 
-    export async function listarAnimes(anime) {
+    export async function consultarAnime() {
 
         const comando = 
         
@@ -23,12 +25,13 @@ export async function inserirAnime(anime) {
             NM_ANIME   NOME
          FROM TB_ANIME;`
         
-        const [resposta] = await con.query (comando,[anime.nome]);
-        anime.id = resposta.insertId;
+        const [resposta] = await con.query (comando);
         
-        return filme;
+        return resposta;
         
         }
 
+
+        export default server;
 
 
