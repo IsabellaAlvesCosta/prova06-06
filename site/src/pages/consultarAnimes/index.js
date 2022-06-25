@@ -21,7 +21,7 @@ export default function Index(){
         <div>
             <div>
                 <h1 className='a'> 
-                    Animes Cadastrados
+                    Animes Cadastrados:
                 </h1>
                 <p>Nome:</p>
                 <Link to='/' > Voltar </Link>
